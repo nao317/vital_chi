@@ -1,6 +1,5 @@
 # this file is powered by chat gpt
-
-# Node.js公式イメージを使用
+# Node.js公式イメージ
 FROM node:20-alpine
 
 # 作業ディレクトリ作成
@@ -9,8 +8,8 @@ WORKDIR /app
 # 依存関係インストール用にpackage.jsonだけコピー
 COPY package*.json ./
 
-# 依存関係インストール
-RUN npm install
+# 本番用依存関係のみをインストール
+RUN npm ci --only=production
 
 # ソースコードをコピー
 COPY . .
@@ -21,5 +20,5 @@ RUN npm run build
 # ポート解放
 EXPOSE 3000
 
-# 実行コマンド
-CMD ["npm", "start"]
+# アプリ実行
+CMD ["npm", "run", "dev"]
