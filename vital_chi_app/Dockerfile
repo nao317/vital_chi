@@ -9,7 +9,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # 本番用依存関係のみをインストール
-RUN npm ci --only=production
+RUN npm ci
 
 # ソースコードをコピー
 COPY . .
