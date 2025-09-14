@@ -1,0 +1,5 @@
+.home{
+    background-image: url("/treesbackground.png");
+    background-size: cover;
+    height: 100vh;
+}
