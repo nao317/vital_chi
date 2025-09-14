@@ -1,7 +1,15 @@
-export default function hitPoint(){
+
+export default function HitPoint(){
     return (
-        <div className="">
-            
+        <div className="h-35 w-45 flex bg-white/50">
+            <img 
+            src="/heart.png"
+            alt="heart"
+            className="h-35 w-20"
+            />
+            <div className="h-35 w-20 text-5xl text-yellow-800 mt-12">
+                100
+            </div>
         </div>
     )
 }
