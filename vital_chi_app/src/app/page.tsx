@@ -1,18 +1,24 @@
 
+import Image from "next/image"
+
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-[#FFA237]">
       {/* バイタルっぽタイトル画像 */}
-      <img
+      <Image
         src="/vital_po_title.png" // public/hedgehog.png に保存しておく
         alt="vital_po_title"
-        className="w-80 h-80 mb-4"
+        width={320}
+        height={320}
+        className="mb-4"
       />
       {/* ハリネズミ画像 */}
-      <img
+      <Image
         src="/harinezumi.png" // public/hedgehog.png に保存しておく
         alt="harinezumi"
-        className="w-30 h-30 mb-8"
+        width={120}
+        height={120}
+        className="mb-8"
       />
 
       {/* ボタン */}
