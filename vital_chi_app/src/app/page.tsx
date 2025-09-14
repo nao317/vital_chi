@@ -2,11 +2,17 @@
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-[#FFA237]">
+      {/* バイタルっぽタイトル画像 */}
+      <img
+        src="/vital_po_title.png" // public/hedgehog.png に保存しておく
+        alt="vital_po_title"
+        className="w-80 h-80 mb-4"
+      />
       {/* ハリネズミ画像 */}
       <img
         src="/harinezumi.png" // public/hedgehog.png に保存しておく
-        alt="Hedgehog"
-        className="w-40 h-40 mb-8"
+        alt="harinezumi"
+        className="w-30 h-30 mb-8"
       />
 
       {/* ボタン */}
