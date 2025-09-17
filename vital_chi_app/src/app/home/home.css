@@ -2,4 +2,5 @@
     background-image: url("/treesbackground.png");
     background-size: cover;
     height: 100vh;
+    position: relative;
 }
