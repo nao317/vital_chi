@@ -3,15 +3,15 @@
 import './home.css';
 import HitPoint from '@/components/ui/hitpoint';
 import DateCount from '@/components/ui/datecount';
+import Tree from '@/components/ui/tree';
 
 export default function home () {
     return (
         <div className="home">
-            <div>
-                <HitPoint />
-                <DateCount />
-
-            </div>
+            
+            <HitPoint />
+            <DateCount />
+            <Tree />
         </div>
     );
 }

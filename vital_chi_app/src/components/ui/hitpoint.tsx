@@ -1,7 +1,7 @@
 
 export default function HitPoint(){
     return (
-        <div className="h-35 w-45 flex bg-white/50">
+        <div className="h-35 w-45 flex bg-white/50 absolute " >
             <img 
             src="/heart.png"
             alt="heart"
